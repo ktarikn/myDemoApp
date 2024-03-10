@@ -1,29 +1,11 @@
-   <dependency>
-      <groupId>com.sparkjava</groupId>
-      <artifactId>spark-core</artifactId>
-      <version>2.5.4</version>
-    </dependency>
+<title>My application</title>
+  <h1>Hello, World!</h1>
+    Result is {{result}}
 
-    <dependency>
-      <groupId>com.sparkjava</groupId>
-      <artifactId>spark-template-mustache</artifactId>
-      <version>2.3</version>
-    </dependency>
 
-    <dependency>
-      <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-core</artifactId>
-      <version>2.10.0</version>
-    </dependency>
-    
-   <dependency>
-      <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-api</artifactId>
-      <version>2.10.0</version>
-    </dependency>
-   
-   <dependency>
-      <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-slf4j-impl</artifactId>
-      <version>2.10.0</version>
-    </dependency>
+  <form action="compute" method="post">
+        <textarea name="input1" rows="10" cols="30"></textarea>
+        <textarea name="input2" rows="10" cols="30"></textarea>
+        <br>
+        <input type="submit">
+  </form>
