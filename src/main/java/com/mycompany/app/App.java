@@ -99,7 +99,11 @@ public class App
 
           String input4 = req.queryParams("input4");
           int param4 = Integer.parseInt(input4);
-          int[] result = App.vectorMultipication(inputList, input2List,param3,param4);
+          String result="";
+          int[] answer = App.vectorMultipication(inputList, input2List,param3,param4);
+          for(int integer : answer){
+            result+= integer;
+          }
 
          Map map = new HashMap();
           map.put("result", result);
