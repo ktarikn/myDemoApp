@@ -96,9 +96,11 @@ public class App
 
           String input3 = req.queryParams("input3");
           boolean param3 = input3.equals("inner");
+          System.out.println(input3);
 
           String input4 = req.queryParams("input4");
           int param4 = Integer.parseInt(input4);
+          System.out.println(input4);
           String result="";
           int[] answer = App.vectorMultipication(inputList, input2List,param3,param4);
           for(int integer : answer){
