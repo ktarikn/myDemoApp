@@ -87,9 +87,9 @@ public class App
           java.util.Scanner sc2 = new java.util.Scanner(input2);
           sc1.useDelimiter("[;\r\n]+");
           java.util.ArrayList<Integer> input2List = new java.util.ArrayList<>();
-          while (sc1.hasNext())
+          while (sc2.hasNext())
           {
-            int value = Integer.parseInt(sc1.next().replaceAll("\\s",""));
+            int value = Integer.parseInt(sc2.next().replaceAll("\\s",""));
             input2List.add(value);
           }
           System.out.println(input2List);
@@ -104,7 +104,7 @@ public class App
           String result="";
           int[] answer = App.vectorMultipication(inputList, input2List,param3,param4);
           for(int integer : answer){
-            result+= integer;
+            result+= integer+ " ";
           }
 
          Map map = new HashMap();
